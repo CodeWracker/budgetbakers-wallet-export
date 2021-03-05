@@ -14,17 +14,19 @@ Export to json the data from your account in Wallet, by budget bakers
 
 ## Files Structure
 
-│ .gitignore</br>
-│ geckodriver.log</br>
-│ README.md</br>
-│</br>
-├───geckodriver</br>
-│ geckodriver.exe</br>
-│</br>
-├───site</br>
-│ │ registros-wallet.html</br>
-│</br>
-└───src</br>
-config.py</br>
-main.py</br>
-registros.json</br>
+```
+│   .gitignore
+│   geckodriver.log
+│   README.md
+│
+├───geckodriver
+│       geckodriver.exe
+│
+├───site
+│   │   registros-wallet.html
+│
+└───src
+        config.py
+        main.py
+        registros.json
+```
