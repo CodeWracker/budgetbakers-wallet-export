@@ -48,7 +48,7 @@ if __name__ == "__main__":
                         if len(text) == 5:
                             data["Categoria"] = text[0]
                             data["Conta"] = text[1]
-                            data["Descricao"] = text[2] + text[3]
+                            data["Descricao"] = text[2] + " " + text[3]
                             data["Valor"] = text[4]
                         data["Data"] = date
                         print(data)
