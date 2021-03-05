@@ -16,7 +16,6 @@ if __name__ == "__main__":
         "Descricao": "d",
         "Data": "28 de janeiro de 2020"
     }
-    allData = [];
     els = els.find_elements_by_tag_name("div")
     cont = 0
     date = ""
@@ -24,7 +23,7 @@ if __name__ == "__main__":
 
     with open('out.json', 'w',encoding="utf-8") as f:
         with redirect_stdout(f):
-            print("'data' = [")
+            print("[")
             for el in els:
                 if cont >5:
                     try:
