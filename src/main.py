@@ -6,16 +6,10 @@ from config import *
 
 if __name__ == "__main__":
     driver = configuration()
-    driver.get("file:///C:/Users/Rodrigo Ferraz Souza/Documents/Projetos/Pessoal/wallet-export/site/registros-wallet.html")
+    driver.get("file:///C:/Users/Rodrigo Ferraz Souza/Documents/Projetos/Pessoal/budgetbakers-wallet-export/site/registros-wallet-p.html")
     #els = driver.find_elements_by_css_selector('._3wwqabSSUyshePYhPywONa')
     els = driver.find_element_by_css_selector(".VypTY5DQ_tmahm5VdHFJK")
-    data ={
-        "Categoria": "a",
-        "Conta": "BB",
-        "Valor": 600,
-        "Descricao": "d",
-        "Data": "28 de janeiro de 2020"
-    }
+    
     els = els.find_elements_by_tag_name("div")
     cont = 0
     date = ""
@@ -35,6 +29,14 @@ if __name__ == "__main__":
                     elements = el.find_elements_by_css_selector('._3wwqabSSUyshePYhPywONa')
                     #print(date)
                     for ele in elements:
+                        text = []
+                        data ={
+                            "Categoria": "",
+                            "Conta": "",
+                            "Valor": 0,
+                            "Descricao": "",
+                            "Data": ""
+                        }
                         text = ele.text.split("\n")
                         if len(text) == 3:
                             data["Categoria"] = text[0]
