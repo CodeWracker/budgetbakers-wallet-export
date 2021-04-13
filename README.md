@@ -21,6 +21,7 @@ You will need firefox installed.
 ```
 │   .gitignore
 │   geckodriver.log
+│   jsontocsv.js
 │   README.md
 │
 ├───geckodriver
