@@ -15,7 +15,7 @@ if __name__ == "__main__":
     date = ""
     ach = True
 
-    with open('../export/out.json', 'w',encoding="utf-8") as f:
+    with open('./export/out.json', 'w',encoding="utf-8") as f:
         with redirect_stdout(f):
             print("[")
             for el in els:
