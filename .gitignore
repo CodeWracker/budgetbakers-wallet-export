@@ -1,3 +1,4 @@
-site/*
+site/*.html
+site/registros*
 *.json
 *.log
