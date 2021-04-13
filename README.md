@@ -12,7 +12,9 @@ You will need firefox installed.
 - Put the files it generated into the "site" folder with the correct name (Tree bellow)
 - run `$ python src/main.py`
 - it will save into the JSON file, BUT the quote symbol is wrong, then you have to replace it from ' to " (if you use VSCode, prettier will automatically do it when you save the file)
-  > This last item will be removed in a future version, but, by now, it works this way
+
+> This last item will be removed in a future version, but, by now, it works this way
+
 - To convert it to csv, run `$ node jsontocsv.js`
 
 ## Files Structure
