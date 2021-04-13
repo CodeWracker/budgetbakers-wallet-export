@@ -1,8 +1,11 @@
 # budgetbakers-wallet-export
 
-Export to json the data from your account in Wallet, by budget bakers
+Export to json the data from your account in Wallet, by budget bakers without a premium account</br>
+(I didn't want to pay it just to export my dat...)
 
 # How to use
+
+You will need firefox installed.
 
 - Go to the web-app records page and select what you want and scroll it to the and
 - Hit ctrl+s to save the html page

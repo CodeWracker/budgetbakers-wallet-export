@@ -6,7 +6,7 @@ from config import *
 
 if __name__ == "__main__":
     driver = configuration()
-    driver.get("file:///C:/Users/Rodrigo Ferraz Souza/Documents/Projetos/Pessoal/budgetbakers-wallet-export/site/registros-wallet-p.html")
+    driver.get("file://" + FILE_PATH )
     #els = driver.find_elements_by_css_selector('._3wwqabSSUyshePYhPywONa')
     els = driver.find_element_by_css_selector(".VypTY5DQ_tmahm5VdHFJK")
     
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     date = ""
     ach = True
 
-    with open('out.json', 'w',encoding="utf-8") as f:
+    with open('../export/out.json', 'w',encoding="utf-8") as f:
         with redirect_stdout(f):
             print("[")
             for el in els:
@@ -58,5 +58,5 @@ if __name__ == "__main__":
                 cont = cont+1
             
             print("]")
-            
+    driver.close()
     
